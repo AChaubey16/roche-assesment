@@ -12,3 +12,21 @@ To build the project, navigate to the project root and run:
 
 ```bash
 mvn clean install
+
+
+REST API Endpoints
+Fizz-Buzz Endpoint
+bash
+Copy code
+GET /api/fizzbuzz?int1={int1}&int2={int2}&limit={limit}&str1={str1}&str2={str2}
+Parameters:
+int1: integer (e.g., 3)
+int2: integer (e.g., 5)
+limit: integer (e.g., 20)
+str1: string (e.g., "Fizz")
+str2: string (e.g., "Buzz")
+Statistics Endpoint
+bash
+Copy code
+GET /api/statistics
+Returns the parameters corresponding to the most used request and the number of hits for that request.
